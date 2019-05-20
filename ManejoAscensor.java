@@ -7,11 +7,18 @@ public class ManejoAscensor
     Persona persona2 = new Persona("Eugenia", "mujer",  2154215,    80,  1.69);
     Persona persona3 = new Persona("Marcos", "hombre",  2315321,  90, 1.75);
 
+
+
     System.out.println("el piso actual es " + consorcioCallePeron.getPisoActual()); //punto b: imprime por pantalla el piso actual (es 0)
 
     consorcioCallePeron.abrirPuerta(); //punto f: abrir puerta
 
-    persona1.subir();
+    consorcioCallePeron.ingresar(persona1); //punto f: suben las personas
+    consorcioCallePeron.ingresar(persona2);
+    consorcioCallePeron.ingresar(persona3);
+    consorcioCallePeron.salir(persona3);
+
+    consorcioCallePeron.cerrarPuerta();
 
     for(int i = 0; i < 3; i++ )
     {
