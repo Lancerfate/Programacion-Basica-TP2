@@ -16,7 +16,7 @@ public class ManejoAscensor
     consorcioCallePeron.ingresar(persona1); //punto f: suben las personas
     consorcioCallePeron.ingresar(persona2);
     consorcioCallePeron.ingresar(persona3);
-    consorcioCallePeron.salir(persona3);
+    consorcioCallePeron.salir(persona3); // punto g: ascensor demasiado pesado. baja persona3
 
     consorcioCallePeron.cerrarPuerta();
 
